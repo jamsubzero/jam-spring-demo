@@ -9,26 +9,33 @@ public class Subject {
 
 	@Id
 	@GeneratedValue
-	int id;
-	String subj;
-	String desc;
-	int unit;
+	private int studentid;
+	private String subj;
+	private String descript;
+	private int unit;
 	
 	public Subject() {
 		super();
 	}
-	public Subject(int id, String subj, String desc, int unit) {
+	
+	public Subject(String subj, String descript, int unit) {
 		super();
-		this.id = id;
 		this.subj = subj;
-		this.desc = desc;
+		this.descript = descript;
 		this.unit = unit;
 	}
-	public int getId() {
-		return id;
+	public Subject(int studentid, String subj, String descript, int unit) {
+		super();
+		this.studentid = studentid;
+		this.subj = subj;
+		this.descript = descript;
+		this.unit = unit;
 	}
-	public void setId(int id) {
-		this.id = id;
+	public int getStudentid() {
+		return studentid;
+	}
+	public void setStudentid(int studentid) {
+		this.studentid = studentid;
 	}
 	public String getSubj() {
 		return subj;
@@ -36,11 +43,11 @@ public class Subject {
 	public void setSubj(String subj) {
 		this.subj = subj;
 	}
-	public String getDesc() {
-		return desc;
+	public String getDescript() {
+		return descript;
 	}
-	public void setDesc(String desc) {
-		this.desc = desc;
+	public void setDescript(String descript) {
+		this.descript = descript;
 	}
 	public int getUnit() {
 		return unit;
@@ -50,9 +57,8 @@ public class Subject {
 	}
 	@Override
 	public String toString() {
-		return "Subject [id=" + id + ", subj=" + subj + ", desc=" + desc + ", unit=" + unit + "]";
+		return "Subject [studentid=" + studentid + ", subj=" + subj + ", descript=" + descript + ", unit=" + unit + "]";
 	}
-	
 	
 	
 	
