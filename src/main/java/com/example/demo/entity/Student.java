@@ -18,12 +18,14 @@ public class Student {
 	public Student() {
 		super();
 	}
+	
 	public Student(String name, String course, int age) {
 		super();
 		this.name = name;
 		this.course = course;
 		this.age = age;
 	}
+	
 	public Student(int stdid, String name, String course, int age) {
 		super();
 		this.stdid = stdid;
@@ -31,6 +33,7 @@ public class Student {
 		this.course = course;
 		this.age = age;
 	}
+	
 	public int getStdid() {
 		return stdid;
 	}
